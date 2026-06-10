@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spacez Review Intelligence — Caretaker Digest</title>
+  <style>
+    body { font-family: Inter, system-ui, sans-serif; margin: 0; padding: 0; background: #f5f7fb; color: #1f2937; }
+    .page { max-width: 1100px; margin: 0 auto; padding: 30px; }
+    h1, h2, h3 { margin: 0 0 12px; }
+    .hero { background: #1f2937; color: white; padding: 28px; border-radius: 18px; margin-bottom: 24px; }
+    .hero p { margin: 12px 0 0; line-height: 1.6; }
+    .section { background: white; border-radius: 18px; padding: 24px; margin-bottom: 20px; box-shadow: 0 16px 30px rgba(15, 23, 42, 0.07); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 18px; }
+    .tag { display: inline-flex; align-items: center; gap: 6px; background: #e2e8f0; color: #334155; border-radius: 999px; padding: 6px 10px; margin: 4px 4px 0 0; font-size: 0.85rem; }
+    .pill { display: inline-flex; padding: 6px 12px; border-radius: 999px; background: #e0f2fe; color: #0369a1; font-size: 0.88rem; margin-right: 8px; }
+    .button-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0; }
+    .review { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #e2e8f0; }
+    .review:last-child { border: none; margin-bottom: 0; padding-bottom: 0; }
+    .small { color: #475569; font-size: 0.95rem; }
+    .timeline { display: grid; gap: 12px; }
+    .banner { background: #fef08a; color: #713f12; border-radius: 14px; padding: 16px; margin-bottom: 16px; }
+    select, button { font: inherit; }
+    select { width: 100%; padding: 10px 12px; border-radius: 12px; border: 1px solid #cbd5e1; }
+    .status { display: inline-flex; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 16px; background: #eff6ff; margin-bottom: 10px; }
+    .status.negative { background: #fee2e2; color: #991b1b; }
+    .status.positive { background: #dcfce7; color: #166534; }
+    .status.mixed { background: #fde68a; color: #92400e; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <h1>Spacez Review Intelligence</h1>
+      <p>Live prototype: caretaker digest with issue ownership, plus operations and business summary signals from Airbnb / Booking.com / Google reviews.</p>
+    </section>
+
+    <section class="section">
+      <h2>Caretaker digest</h2>
+      <div class="card">
+        <label for="caretaker-select">Select caretaker</label>
+        <select id="caretaker-select"></select>
+      </div>
+      <div id="caretaker-panel"></div>
+    </section>
+
+    <section class="section">
+      <h2>Operations snapshot</h2>
+      <div id="operations-panel" class="grid"></div>
+    </section>
+
+    <section class="section">
+      <h2>Business portfolio signals</h2>
+      <div id="business-panel" class="grid"></div>
+    </section>
+  </div>
+
+  <script>
+    async function init() {
+      const response = await fetch('data/reviews.json');
+      const payload = await response.json();
+      const reviews = payload.reviews;
+      const summary = payload.summary;
+      const caretakers = Object.keys(summary.caretakers).sort();
+      const select = document.getElementById('caretaker-select');
+      caretakers.forEach(name => {
+        const option = document.createElement('option');
+        option.value = name;
+        option.textContent = name;
+        select.appendChild(option);
+      });
+      select.addEventListener('change', () => renderCaretaker(select.value, payload));
+      renderCaretaker(caretakers[0], payload);
+      renderOperations(payload);
+      renderBusiness(payload);
+    }
+
+    function renderCaretaker(name, payload) {
+      const reviews = payload.reviews.filter(r => r.caretaker_name === name);
+      const summary = payload.summary.caretakers[name];
+      const panel = document.getElementById('caretaker-panel');
+      panel.innerHTML = '';
+
+      const header = document.createElement('div');
+      header.className = 'card';
+      header.innerHTML = `<h3>${name}</h3>
+        <p class="small">Hosted reviews: ${summary.reviews} | avg normalized rating: ${summary.avg_rating}</p>
+        <div class="status ${summary.sentiment.negative ? 'negative' : summary.sentiment.mixed ? 'mixed' : 'positive'}">
+          <span>${summary.sentiment.negative || 0} negative</span>
+          <span>${summary.sentiment.mixed || 0} mixed</span>
+          <span>${summary.sentiment.positive || 0} positive</span>
+        </div>`;
+      panel.appendChild(header);
+
+      const topIssues = Object.entries(summary.tag_counts)
+        .filter(([tag]) => tag !== 'general')
+        .slice(0, 5);
+      const issuesCard = document.createElement('div');
+      issuesCard.className = 'card';
+      issuesCard.innerHTML = '<h3>Top themes</h3>';
+      topIssues.forEach(([tag, count]) => {
+        const pill = document.createElement('span');
+        pill.className = 'pill';
+        pill.textContent = `${tag} · ${count}`;
+        issuesCard.appendChild(pill);
+      });
+      panel.appendChild(issuesCard);
+
+      const actionCard = document.createElement('div');
+      actionCard.className = 'card';
+      actionCard.innerHTML = '<h3>Actionable summary</h3>';
+      const actionList = document.createElement('div');
+      const actionable = [];
+      const caution = [];
+      reviews.forEach(review => {
+        const source = review.platform;
+        const issues = review.tags.filter(tag => tag !== 'general');
+        const owners = review.owners;
+        const line = `${source}: ${issues.join(', ') || 'general'} — ${review.review_text}`;
+        if (owners.includes('caretaker')) {
+          actionable.push(line);
+        } else if (owners.includes('business')) {
+          caution.push(line);
+        } else {
+          actionable.push(line);
+        }
+      });
+      actionCard.innerHTML += `<h4>Caretaker-owned issues</h4><p class="small">These are likely the best places to act directly or coordinate vendors.</p>`;
+      actionable.slice(0, 3).forEach(text => {
+        const p = document.createElement('p');
+        p.textContent = text;
+        actionCard.appendChild(p);
+      });
+      actionCard.innerHTML += '<h4 style="margin-top:20px;">Non-actionable / escalate</h4><p class="small">Flag these to operations/business because they are often outside the caretaker’s control.</p>';
+      caution.slice(0, 3).forEach(text => {
+        const p = document.createElement('p');
+        p.textContent = text;
+        actionCard.appendChild(p);
+      });
+      panel.appendChild(actionCard);
+
+      const listCard = document.createElement('div');
+      listCard.className = 'card';
+      listCard.innerHTML = '<h3>Recent hosted reviews</h3>';
+      reviews.sort((a,b)=> new Date(b.review_date) - new Date(a.review_date)).forEach(review => {
+        const div = document.createElement('div');
+        div.className = 'review';
+        div.innerHTML = `
+          <strong>${review.review_id} · ${review.platform} · ${review.property_name}</strong>
+          <div class="small">Rating ${review.rating_normalized}/5 | ${review.tags.join(', ')}</div>
+          <p>${review.review_text}</p>`;
+        listCard.appendChild(div);
+      });
+      panel.appendChild(listCard);
+    }
+
+    function renderOperations(payload) {
+      const panel = document.getElementById('operations-panel');
+      panel.innerHTML = '';
+      const properties = Object.entries(payload.summary.properties).sort((a,b) => b[1].tag_counts.pool - a[1].tag_counts.pool || b[1].avg_rating - a[1].avg_rating);
+      properties.forEach(([name, data]) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `<h3>${name}</h3>
+          <p class="small">Avg rating: ${data.avg_rating} | Reviews: ${data.reviews}</p>
+          <p class="small">Top issue tags:</p>`;
+        Object.entries(data.tag_counts).slice(0, 4).forEach(([tag, count]) => {
+          const span = document.createElement('span');
+          span.className = 'tag';
+          span.textContent = `${tag} · ${count}`;
+          card.appendChild(span);
+        });
+        panel.appendChild(card);
+      });
+    }
+
+    function renderBusiness(payload) {
+      const panel = document.getElementById('business-panel');
+      panel.innerHTML = '';
+      const properties = Object.entries(payload.summary.properties).sort((a,b)=>b[1].avg_rating-a[1].avg_rating);
+      properties.slice(0,4).forEach(([name, data]) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `<h3>${name}</h3>
+          <p class="small">Normalized brand score: ${data.avg_rating}/5</p>
+          <div>${Object.entries(data.sentiment).map(([k,v])=>`<span class="pill">${k}: ${v}</span>`).join(' ')}</div>`;
+        panel.appendChild(card);
+      });
+    }
+
+    init().catch(console.error);
+  </script>
+</body>
+</html>
