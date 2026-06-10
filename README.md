@@ -14,11 +14,11 @@ The working prototype is in `prototype/index.html`.
 1. Open a terminal in `/workspaces/Darshan-Assignment/prototype`
 2. Run:
    ```bash
-   python3 -m http.server 8000
+   python3 -m http.server 8001
    ```
-3. Open:
+3. Open in your browser:
    ```
-   http://127.0.0.1:8000
+   http://127.0.0.1:8001
    ```
 
 The page shows the caretaker digest, plus operations and business summary panels.
@@ -27,3 +27,10 @@ The page shows the caretaker digest, plus operations and business summary panels
 - The prototype focuses on the caretaker stakeholder, but also includes operation/business signal summaries.
 - It normalizes ratings across Airbnb, Booking.com, and Google.
 - `prototype/process_reviews.py` rebuilds the JSON data from the Excel file.
+
+## Setup
+Install the Python dependency before running the generator:
+
+```bash
+python3 -m pip install --user -r requirements.txt
+```
