@@ -1,0 +1,1457 @@
+{
+  "reviews": [
+    {
+      "review_id": "RV001",
+      "platform": "Airbnb",
+      "property_id": "P01",
+      "property_name": "Serenity Villa",
+      "location": "Assagao, Goa",
+      "caretaker_id": "CT01",
+      "caretaker_name": "Suresh Naik",
+      "stay_date": "2026-01-12 00:00:00",
+      "review_date": "2026-01-15 00:00:00",
+      "nights": 3,
+      "guests": 6,
+      "rating_raw": 4,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Aarti Menon",
+      "review_text": "Beautiful villa and Suresh was incredibly helpful - arranged a cook at short notice and gave great beach tips. Only issue was the pool looked green and wasn't cleaned during our 3-night stay.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "cleanliness",
+        "heating",
+        "pool",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV002",
+      "platform": "Booking.com",
+      "property_id": "P01",
+      "property_name": "Serenity Villa",
+      "location": "Assagao, Goa",
+      "caretaker_id": "CT01",
+      "caretaker_name": "Suresh Naik",
+      "stay_date": "2026-02-03 00:00:00",
+      "review_date": "2026-02-05 00:00:00",
+      "nights": 2,
+      "guests": 4,
+      "rating_raw": 6,
+      "rating_scale": 10,
+      "host_responded": "No",
+      "guest_name": "M. Fernandes",
+      "review_text": "Lovely property but the swimming pool was not maintained - murky water the whole time. Caretaker was polite and responsive though.",
+      "rating_normalized": 3.0,
+      "tags": [
+        "pool",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV003",
+      "platform": "Google",
+      "property_id": "P01",
+      "property_name": "Serenity Villa",
+      "location": "Assagao, Goa",
+      "caretaker_id": "CT01",
+      "caretaker_name": "Suresh Naik",
+      "stay_date": "2026-02-20 00:00:00",
+      "review_date": "2026-02-21 00:00:00",
+      "nights": 2,
+      "guests": 5,
+      "rating_raw": 3,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Rohit Bansal",
+      "review_text": "Pool was dirty and clearly hadn't been cleaned in days. Disappointing for the price. The caretaker himself was nice and tried to help.",
+      "rating_normalized": 3.0,
+      "tags": [
+        "cleanliness",
+        "pool",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV004",
+      "platform": "Airbnb",
+      "property_id": "P01",
+      "property_name": "Serenity Villa",
+      "location": "Assagao, Goa",
+      "caretaker_id": "CT01",
+      "caretaker_name": "Suresh Naik",
+      "stay_date": "2026-03-08 00:00:00",
+      "review_date": "2026-03-10 00:00:00",
+      "nights": 2,
+      "guests": 4,
+      "rating_raw": 5,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Lena Hoffmann",
+      "review_text": "Perfect stay! Suresh went above and beyond. Spotless interiors, great location in Assagao.",
+      "rating_normalized": 5.0,
+      "tags": [
+        "general"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV005",
+      "platform": "Booking.com",
+      "property_id": "P01",
+      "property_name": "Serenity Villa",
+      "location": "Assagao, Goa",
+      "caretaker_id": "CT01",
+      "caretaker_name": "Suresh Naik",
+      "stay_date": "2026-03-22 00:00:00",
+      "review_date": "2026-03-24 00:00:00",
+      "nights": 2,
+      "guests": 6,
+      "rating_raw": 9.2,
+      "rating_scale": 10,
+      "host_responded": "Yes",
+      "guest_name": "Sandeep Rao",
+      "review_text": "Excellent host service. Suresh arranged airport pickup and a birthday cake. Highly recommend.",
+      "rating_normalized": 4.6,
+      "tags": [
+        "listing",
+        "service"
+      ],
+      "owners": [
+        "business",
+        "caretaker"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV006",
+      "platform": "Airbnb",
+      "property_id": "P02",
+      "property_name": "Hilltop Haven",
+      "location": "Lonavala, Maharashtra",
+      "caretaker_id": "CT02",
+      "caretaker_name": "Mahesh Patil",
+      "stay_date": "2025-12-28 00:00:00",
+      "review_date": "2025-12-30 00:00:00",
+      "nights": 2,
+      "guests": 8,
+      "rating_raw": 2,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Karan Shah",
+      "review_text": "Listing photos show a clear valley view but ours was blocked by an under-construction building next door. Felt misled. Mahesh was apologetic but couldn't do anything.",
+      "rating_normalized": 2.0,
+      "tags": [
+        "listing"
+      ],
+      "owners": [
+        "business"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV007",
+      "platform": "Google",
+      "property_id": "P02",
+      "property_name": "Hilltop Haven",
+      "location": "Lonavala, Maharashtra",
+      "caretaker_id": "CT02",
+      "caretaker_name": "Mahesh Patil",
+      "stay_date": "2026-01-17 00:00:00",
+      "review_date": "2026-01-18 00:00:00",
+      "nights": 2,
+      "guests": 6,
+      "rating_raw": 2,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Priya Nair",
+      "review_text": "WiFi did not work the entire weekend and we were there to work remotely. Raised it multiple times, no fix.",
+      "rating_normalized": 2.0,
+      "tags": [
+        "wifi"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV008",
+      "platform": "Booking.com",
+      "property_id": "P02",
+      "property_name": "Hilltop Haven",
+      "location": "Lonavala, Maharashtra",
+      "caretaker_id": "CT02",
+      "caretaker_name": "Mahesh Patil",
+      "stay_date": "2026-02-07 00:00:00",
+      "review_date": "2026-02-09 00:00:00",
+      "nights": 2,
+      "guests": 10,
+      "rating_raw": 7.5,
+      "rating_scale": 10,
+      "host_responded": "No",
+      "guest_name": "A. Kulkarni",
+      "review_text": "Decent place for a group. WiFi was patchy. Caretaker Mahesh helped with everything else.",
+      "rating_normalized": 3.75,
+      "tags": [
+        "heating",
+        "service",
+        "wifi"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "mixed"
+    },
+    {
+      "review_id": "RV009",
+      "platform": "Airbnb",
+      "property_id": "P02",
+      "property_name": "Hilltop Haven",
+      "location": "Lonavala, Maharashtra",
+      "caretaker_id": "CT02",
+      "caretaker_name": "Mahesh Patil",
+      "stay_date": "2026-03-01 00:00:00",
+      "review_date": "2026-03-03 00:00:00",
+      "nights": 2,
+      "guests": 7,
+      "rating_raw": 4,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Tanvi Desai",
+      "review_text": "Good for a family weekend. The master AC stopped working on day 2 but Mahesh got a technician the same day.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "heating"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV010",
+      "platform": "Google",
+      "property_id": "P02",
+      "property_name": "Hilltop Haven",
+      "location": "Lonavala, Maharashtra",
+      "caretaker_id": "CT02",
+      "caretaker_name": "Mahesh Patil",
+      "stay_date": "2026-03-29 00:00:00",
+      "review_date": "2026-03-30 00:00:00",
+      "nights": 1,
+      "guests": 4,
+      "rating_raw": 5,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Vikram Joshi",
+      "review_text": "Great villa, great host. Mahesh is a gem.",
+      "rating_normalized": 5.0,
+      "tags": [
+        "service"
+      ],
+      "owners": [
+        "caretaker"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV011",
+      "platform": "Airbnb",
+      "property_id": "P03",
+      "property_name": "Misty Estate",
+      "location": "Chikmagalur, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-01-05 00:00:00",
+      "review_date": "2026-01-07 00:00:00",
+      "nights": 2,
+      "guests": 5,
+      "rating_raw": 3,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Sneha Pillai",
+      "review_text": "Stunning coffee-estate views. But check-in was a mess - caretaker arrived 90 minutes late and we waited outside in the rain.",
+      "rating_normalized": 3.0,
+      "tags": [
+        "check-in",
+        "environment",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV012",
+      "platform": "Booking.com",
+      "property_id": "P03",
+      "property_name": "Misty Estate",
+      "location": "Chikmagalur, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-01-24 00:00:00",
+      "review_date": "2026-01-26 00:00:00",
+      "nights": 2,
+      "guests": 6,
+      "rating_raw": 5,
+      "rating_scale": 10,
+      "host_responded": "No",
+      "guest_name": "D. Reddy",
+      "review_text": "Nobody was there to receive us at the scheduled time. Had to call the manager. The property itself is gorgeous.",
+      "rating_normalized": 2.5,
+      "tags": [
+        "service"
+      ],
+      "owners": [
+        "caretaker"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV013",
+      "platform": "Google",
+      "property_id": "P03",
+      "property_name": "Misty Estate",
+      "location": "Chikmagalur, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-02-14 00:00:00",
+      "review_date": "2026-02-15 00:00:00",
+      "nights": 1,
+      "guests": 4,
+      "rating_raw": 4,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Megha Iyer",
+      "review_text": "Beautiful location. Hot water in the second bathroom didn't work.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "heating"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV014",
+      "platform": "Airbnb",
+      "property_id": "P03",
+      "property_name": "Misty Estate",
+      "location": "Chikmagalur, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-03-11 00:00:00",
+      "review_date": "2026-03-13 00:00:00",
+      "nights": 2,
+      "guests": 4,
+      "rating_raw": 5,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "James Carter",
+      "review_text": "Magical place, woke up to mist over the hills. Loved it.",
+      "rating_normalized": 5.0,
+      "tags": [
+        "heating"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV015",
+      "platform": "Booking.com",
+      "property_id": "P03",
+      "property_name": "Misty Estate",
+      "location": "Chikmagalur, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-04-02 00:00:00",
+      "review_date": "2026-04-04 00:00:00",
+      "nights": 2,
+      "guests": 5,
+      "rating_raw": 8,
+      "rating_scale": 10,
+      "host_responded": "No",
+      "guest_name": "H. Shetty",
+      "review_text": "Great estate stay. Geyser in one bathroom was faulty.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "heating"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV016",
+      "platform": "Airbnb",
+      "property_id": "P04",
+      "property_name": "Coorg Canopy",
+      "location": "Madikeri, Coorg, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-01-09 00:00:00",
+      "review_date": "2026-01-11 00:00:00",
+      "nights": 2,
+      "guests": 6,
+      "rating_raw": 2,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Nikhil Verma",
+      "review_text": "Check-in was delayed by over an hour and the caretaker was unreachable on phone. Once he arrived it was fine but a frustrating start.",
+      "rating_normalized": 2.0,
+      "tags": [
+        "check-in",
+        "heating",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV017",
+      "platform": "Google",
+      "property_id": "P04",
+      "property_name": "Coorg Canopy",
+      "location": "Madikeri, Coorg, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-02-01 00:00:00",
+      "review_date": "2026-02-02 00:00:00",
+      "nights": 1,
+      "guests": 4,
+      "rating_raw": 4,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Anjali Kapoor",
+      "review_text": "Lovely property surrounded by greenery. Setup took a while on arrival.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "check-in"
+      ],
+      "owners": [
+        "caretaker"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV018",
+      "platform": "Booking.com",
+      "property_id": "P04",
+      "property_name": "Coorg Canopy",
+      "location": "Madikeri, Coorg, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-02-26 00:00:00",
+      "review_date": "2026-02-28 00:00:00",
+      "nights": 2,
+      "guests": 5,
+      "rating_raw": 8.5,
+      "rating_scale": 10,
+      "host_responded": "Yes",
+      "guest_name": "R. Pillai",
+      "review_text": "Peaceful and clean. Would visit again.",
+      "rating_normalized": 4.25,
+      "tags": [
+        "cleanliness",
+        "heating"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV019",
+      "platform": "Airbnb",
+      "property_id": "P04",
+      "property_name": "Coorg Canopy",
+      "location": "Madikeri, Coorg, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-03-19 00:00:00",
+      "review_date": "2026-03-21 00:00:00",
+      "nights": 2,
+      "guests": 4,
+      "rating_raw": 3,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Sara Williams",
+      "review_text": "Nice villa but the road leading up is in terrible condition - our sedan scraped the bottom. Should be mentioned in the listing.",
+      "rating_normalized": 3.0,
+      "tags": [
+        "listing"
+      ],
+      "owners": [
+        "business"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV020",
+      "platform": "Airbnb",
+      "property_id": "P05",
+      "property_name": "Backwater Bungalow",
+      "location": "Alleppey, Kerala",
+      "caretaker_id": "CT04",
+      "caretaker_name": "Biju Thomas",
+      "stay_date": "2026-01-03 00:00:00",
+      "review_date": "2026-01-06 00:00:00",
+      "nights": 3,
+      "guests": 4,
+      "rating_raw": 5,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Deepa Krishnan",
+      "review_text": "Biju was the highlight of our trip - arranged a houseboat ride and cooked the best Kerala meals. Felt like family.",
+      "rating_normalized": 5.0,
+      "tags": [
+        "service"
+      ],
+      "owners": [
+        "caretaker"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV021",
+      "platform": "Booking.com",
+      "property_id": "P05",
+      "property_name": "Backwater Bungalow",
+      "location": "Alleppey, Kerala",
+      "caretaker_id": "CT04",
+      "caretaker_name": "Biju Thomas",
+      "stay_date": "2026-01-28 00:00:00",
+      "review_date": "2026-01-30 00:00:00",
+      "nights": 2,
+      "guests": 4,
+      "rating_raw": 9.5,
+      "rating_scale": 10,
+      "host_responded": "Yes",
+      "guest_name": "T. Mathew",
+      "review_text": "Outstanding hospitality. Biju anticipated everything. The bungalow is right on the backwaters.",
+      "rating_normalized": 4.75,
+      "tags": [
+        "environment",
+        "heating"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV022",
+      "platform": "Google",
+      "property_id": "P05",
+      "property_name": "Backwater Bungalow",
+      "location": "Alleppey, Kerala",
+      "caretaker_id": "CT04",
+      "caretaker_name": "Biju Thomas",
+      "stay_date": "2026-02-18 00:00:00",
+      "review_date": "2026-02-19 00:00:00",
+      "nights": 1,
+      "guests": 2,
+      "rating_raw": 5,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Olivia Brown",
+      "review_text": "Best caretaker we've ever had. Highly recommend.",
+      "rating_normalized": 5.0,
+      "tags": [
+        "service"
+      ],
+      "owners": [
+        "caretaker"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV023",
+      "platform": "Airbnb",
+      "property_id": "P05",
+      "property_name": "Backwater Bungalow",
+      "location": "Alleppey, Kerala",
+      "caretaker_id": "CT04",
+      "caretaker_name": "Biju Thomas",
+      "stay_date": "2026-03-05 00:00:00",
+      "review_date": "2026-03-08 00:00:00",
+      "nights": 3,
+      "guests": 6,
+      "rating_raw": 4,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Arjun Menon",
+      "review_text": "Wonderful location and host. Mosquitoes were a problem in the evening - bring repellent.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "environment",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV024",
+      "platform": "Booking.com",
+      "property_id": "P05",
+      "property_name": "Backwater Bungalow",
+      "location": "Alleppey, Kerala",
+      "caretaker_id": "CT04",
+      "caretaker_name": "Biju Thomas",
+      "stay_date": "2026-03-27 00:00:00",
+      "review_date": "2026-03-29 00:00:00",
+      "nights": 2,
+      "guests": 4,
+      "rating_raw": 7,
+      "rating_scale": 10,
+      "host_responded": "No",
+      "guest_name": "S. George",
+      "review_text": "Great host. The place smelled a bit damp, probably the humidity by the water.",
+      "rating_normalized": 3.5,
+      "tags": [
+        "cleanliness",
+        "environment",
+        "heating",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "mixed"
+    },
+    {
+      "review_id": "RV025",
+      "platform": "Airbnb",
+      "property_id": "P06",
+      "property_name": "Cliffside Retreat",
+      "location": "Kasauli, Himachal Pradesh",
+      "caretaker_id": "CT05",
+      "caretaker_name": "Deepak Sharma",
+      "stay_date": "2025-12-20 00:00:00",
+      "review_date": "2025-12-22 00:00:00",
+      "nights": 2,
+      "guests": 5,
+      "rating_raw": 2,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Ishaan Gupta",
+      "review_text": "The heating didn't work properly and Kasauli in December is freezing. We were cold all night despite raising it with the caretaker twice.",
+      "rating_normalized": 2.0,
+      "tags": [
+        "heating",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV026",
+      "platform": "Google",
+      "property_id": "P06",
+      "property_name": "Cliffside Retreat",
+      "location": "Kasauli, Himachal Pradesh",
+      "caretaker_id": "CT05",
+      "caretaker_name": "Deepak Sharma",
+      "stay_date": "2026-01-08 00:00:00",
+      "review_date": "2026-01-09 00:00:00",
+      "nights": 1,
+      "guests": 4,
+      "rating_raw": 2,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Neha Saxena",
+      "review_text": "Room heater broken, very cold. Otherwise nice views.",
+      "rating_normalized": 2.0,
+      "tags": [
+        "environment",
+        "heating"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV027",
+      "platform": "Booking.com",
+      "property_id": "P06",
+      "property_name": "Cliffside Retreat",
+      "location": "Kasauli, Himachal Pradesh",
+      "caretaker_id": "CT05",
+      "caretaker_name": "Deepak Sharma",
+      "stay_date": "2026-01-30 00:00:00",
+      "review_date": "2026-02-01 00:00:00",
+      "nights": 2,
+      "guests": 6,
+      "rating_raw": 6.5,
+      "rating_scale": 10,
+      "host_responded": "No",
+      "guest_name": "V. Thakur",
+      "review_text": "Good views but the heating in two rooms was inadequate. Caretaker Deepak was helpful and lent us extra blankets.",
+      "rating_normalized": 3.25,
+      "tags": [
+        "environment",
+        "heating",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV028",
+      "platform": "Airbnb",
+      "property_id": "P06",
+      "property_name": "Cliffside Retreat",
+      "location": "Kasauli, Himachal Pradesh",
+      "caretaker_id": "CT05",
+      "caretaker_name": "Deepak Sharma",
+      "stay_date": "2026-02-22 00:00:00",
+      "review_date": "2026-02-24 00:00:00",
+      "nights": 2,
+      "guests": 4,
+      "rating_raw": 4,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Maya Sharma",
+      "review_text": "Gorgeous sunsets from the deck. Deepak made excellent chai every morning. Heating could be better.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "environment",
+        "heating",
+        "service"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV029",
+      "platform": "Google",
+      "property_id": "P06",
+      "property_name": "Cliffside Retreat",
+      "location": "Kasauli, Himachal Pradesh",
+      "caretaker_id": "CT05",
+      "caretaker_name": "Deepak Sharma",
+      "stay_date": "2026-03-15 00:00:00",
+      "review_date": "2026-03-16 00:00:00",
+      "nights": 1,
+      "guests": 2,
+      "rating_raw": 5,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Aditya Rao",
+      "review_text": "Loved it. Deepak took great care of us.",
+      "rating_normalized": 5.0,
+      "tags": [
+        "general"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV030",
+      "platform": "Airbnb",
+      "property_id": "P07",
+      "property_name": "Vineyard Villa",
+      "location": "Nashik, Maharashtra",
+      "caretaker_id": "CT06",
+      "caretaker_name": "Ganesh More",
+      "stay_date": "2026-01-11 00:00:00",
+      "review_date": "2026-01-13 00:00:00",
+      "nights": 2,
+      "guests": 8,
+      "rating_raw": 1,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Pooja Agarwal",
+      "review_text": "Worst experience. The villa was not cleaned before we arrived - dirty dishes in the sink and hair in the beds. Ganesh blamed the housekeeping vendor.",
+      "rating_normalized": 1.0,
+      "tags": [
+        "cleanliness"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV031",
+      "platform": "Booking.com",
+      "property_id": "P07",
+      "property_name": "Vineyard Villa",
+      "location": "Nashik, Maharashtra",
+      "caretaker_id": "CT06",
+      "caretaker_name": "Ganesh More",
+      "stay_date": "2026-02-06 00:00:00",
+      "review_date": "2026-02-08 00:00:00",
+      "nights": 2,
+      "guests": 6,
+      "rating_raw": 4,
+      "rating_scale": 10,
+      "host_responded": "No",
+      "guest_name": "K. Bhosale",
+      "review_text": "Arrived to an unclean property. Bedsheets were not changed. Very poor.",
+      "rating_normalized": 2.0,
+      "tags": [
+        "cleanliness"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV032",
+      "platform": "Google",
+      "property_id": "P07",
+      "property_name": "Vineyard Villa",
+      "location": "Nashik, Maharashtra",
+      "caretaker_id": "CT06",
+      "caretaker_name": "Ganesh More",
+      "stay_date": "2026-02-28 00:00:00",
+      "review_date": "2026-03-01 00:00:00",
+      "nights": 1,
+      "guests": 4,
+      "rating_raw": 2,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Ravi Chauhan",
+      "review_text": "Cleanliness was a serious issue on arrival. The vineyard itself is beautiful though.",
+      "rating_normalized": 2.0,
+      "tags": [
+        "check-in",
+        "cleanliness"
+      ],
+      "owners": [
+        "caretaker",
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV033",
+      "platform": "Airbnb",
+      "property_id": "P07",
+      "property_name": "Vineyard Villa",
+      "location": "Nashik, Maharashtra",
+      "caretaker_id": "CT06",
+      "caretaker_name": "Ganesh More",
+      "stay_date": "2026-03-20 00:00:00",
+      "review_date": "2026-03-22 00:00:00",
+      "nights": 2,
+      "guests": 2,
+      "rating_raw": 4,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Farah Khan",
+      "review_text": "Lovely vineyard setting, great for a couples getaway. Wine tour next door was a highlight.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "general"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV034",
+      "platform": "Booking.com",
+      "property_id": "P07",
+      "property_name": "Vineyard Villa",
+      "location": "Nashik, Maharashtra",
+      "caretaker_id": "CT06",
+      "caretaker_name": "Ganesh More",
+      "stay_date": "2026-04-05 00:00:00",
+      "review_date": "2026-04-07 00:00:00",
+      "nights": 2,
+      "guests": 5,
+      "rating_raw": 8,
+      "rating_scale": 10,
+      "host_responded": "No",
+      "guest_name": "N. Patil",
+      "review_text": "Nice property. A bit far from Nashik city, plan your travel.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "general"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV035",
+      "platform": "Google",
+      "property_id": "P02",
+      "property_name": "Hilltop Haven",
+      "location": "Lonavala, Maharashtra",
+      "caretaker_id": "CT02",
+      "caretaker_name": "Mahesh Patil",
+      "stay_date": "2026-04-12 00:00:00",
+      "review_date": "2026-04-13 00:00:00",
+      "nights": 1,
+      "guests": 12,
+      "rating_raw": 1,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Yash Mehta",
+      "review_text": "Booked for a group but they turned away our extra guests at the gate citing occupancy policy. Felt blindsided - this wasn't clear at booking.",
+      "rating_normalized": 1.0,
+      "tags": [
+        "listing",
+        "policy"
+      ],
+      "owners": [
+        "business"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV036",
+      "platform": "Airbnb",
+      "property_id": "P01",
+      "property_name": "Serenity Villa",
+      "location": "Assagao, Goa",
+      "caretaker_id": "CT01",
+      "caretaker_name": "Suresh Naik",
+      "stay_date": "2026-04-18 00:00:00",
+      "review_date": "2026-04-20 00:00:00",
+      "nights": 2,
+      "guests": 4,
+      "rating_raw": 5,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Aarti Menon",
+      "review_text": "Second time staying here and Suresh remembers us every visit. Pool was clean this time - looks like they sorted it out.",
+      "rating_normalized": 5.0,
+      "tags": [
+        "cleanliness",
+        "pool"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV037",
+      "platform": "Booking.com",
+      "property_id": "P07",
+      "property_name": "Vineyard Villa",
+      "location": "Nashik, Maharashtra",
+      "caretaker_id": "CT06",
+      "caretaker_name": "Ganesh More",
+      "stay_date": "2026-04-22 00:00:00",
+      "review_date": "2026-04-24 00:00:00",
+      "nights": 2,
+      "guests": 6,
+      "rating_raw": 3,
+      "rating_scale": 10,
+      "host_responded": "No",
+      "guest_name": "S. Joshi",
+      "review_text": "Cleanliness needs serious attention. Second time I've faced this at a Spacez villa.",
+      "rating_normalized": 1.5,
+      "tags": [
+        "cleanliness",
+        "heating"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV038",
+      "platform": "Google",
+      "property_id": "P05",
+      "property_name": "Backwater Bungalow",
+      "location": "Alleppey, Kerala",
+      "caretaker_id": "CT04",
+      "caretaker_name": "Biju Thomas",
+      "stay_date": "2026-04-10 00:00:00",
+      "review_date": "2026-04-11 00:00:00",
+      "nights": 1,
+      "guests": 2,
+      "rating_raw": 4,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Grace Thomas",
+      "review_text": "Great stay overall. Check-in over WhatsApp was smooth and quick.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "check-in"
+      ],
+      "owners": [
+        "caretaker"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV039",
+      "platform": "Airbnb",
+      "property_id": "P03",
+      "property_name": "Misty Estate",
+      "location": "Chikmagalur, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-04-15 00:00:00",
+      "review_date": "2026-04-17 00:00:00",
+      "nights": 2,
+      "guests": 8,
+      "rating_raw": 3,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Mohit Sethi",
+      "review_text": "The place is beautiful but the listing said 4 bedrooms and one was basically a store room with a mattress. Slightly oversold.",
+      "rating_normalized": 3.0,
+      "tags": [
+        "heating",
+        "listing"
+      ],
+      "owners": [
+        "business",
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV040",
+      "platform": "Booking.com",
+      "property_id": "P04",
+      "property_name": "Coorg Canopy",
+      "location": "Madikeri, Coorg, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-04-20 00:00:00",
+      "review_date": "2026-04-22 00:00:00",
+      "nights": 2,
+      "guests": 5,
+      "rating_raw": 9,
+      "rating_scale": 10,
+      "host_responded": "Yes",
+      "guest_name": "L. Nair",
+      "review_text": "Loved the bonfire arrangement. Caretaker was attentive once he arrived.",
+      "rating_normalized": 4.5,
+      "tags": [
+        "service"
+      ],
+      "owners": [
+        "caretaker"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV041",
+      "platform": "Google",
+      "property_id": "P06",
+      "property_name": "Cliffside Retreat",
+      "location": "Kasauli, Himachal Pradesh",
+      "caretaker_id": "CT05",
+      "caretaker_name": "Deepak Sharma",
+      "stay_date": "2026-04-25 00:00:00",
+      "review_date": "2026-04-26 00:00:00",
+      "nights": 1,
+      "guests": 3,
+      "rating_raw": 5,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Rahul Dev",
+      "review_text": "Amazing.",
+      "rating_normalized": 5.0,
+      "tags": [
+        "general"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV042",
+      "platform": "Airbnb",
+      "property_id": "P02",
+      "property_name": "Hilltop Haven",
+      "location": "Lonavala, Maharashtra",
+      "caretaker_id": "CT02",
+      "caretaker_name": "Mahesh Patil",
+      "stay_date": "2026-05-02 00:00:00",
+      "review_date": "2026-05-04 00:00:00",
+      "nights": 2,
+      "guests": 6,
+      "rating_raw": 1,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Simran Kaur",
+      "review_text": "Do not book. Misleading photos and no WiFi. Exactly the issues other reviews mentioned.",
+      "rating_normalized": 1.0,
+      "tags": [
+        "environment",
+        "heating",
+        "listing",
+        "wifi"
+      ],
+      "owners": [
+        "business",
+        "operations"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV043",
+      "platform": "Booking.com",
+      "property_id": "P01",
+      "property_name": "Serenity Villa",
+      "location": "Assagao, Goa",
+      "caretaker_id": "CT01",
+      "caretaker_name": "Suresh Naik",
+      "stay_date": "2026-05-06 00:00:00",
+      "review_date": "2026-05-08 00:00:00",
+      "nights": 2,
+      "guests": 5,
+      "rating_raw": 8,
+      "rating_scale": 10,
+      "host_responded": "Yes",
+      "guest_name": "P. Dsouza",
+      "review_text": "Great villa, Suresh excellent. Pool maintenance is the only recurring gripe I'd flag.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "pool"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV044",
+      "platform": "Google",
+      "property_id": "P03",
+      "property_name": "Misty Estate",
+      "location": "Chikmagalur, Karnataka",
+      "caretaker_id": "CT03",
+      "caretaker_name": "Lokesh Gowda",
+      "stay_date": "2026-05-09 00:00:00",
+      "review_date": "2026-05-10 00:00:00",
+      "nights": 1,
+      "guests": 4,
+      "rating_raw": 2,
+      "rating_scale": 5,
+      "host_responded": "No",
+      "guest_name": "Akash Jain",
+      "review_text": "Late check-in again. Seems to be a pattern with this caretaker.",
+      "rating_normalized": 2.0,
+      "tags": [
+        "check-in",
+        "service"
+      ],
+      "owners": [
+        "caretaker"
+      ],
+      "sentiment": "negative"
+    },
+    {
+      "review_id": "RV045",
+      "platform": "Airbnb",
+      "property_id": "P05",
+      "property_name": "Backwater Bungalow",
+      "location": "Alleppey, Kerala",
+      "caretaker_id": "CT04",
+      "caretaker_name": "Biju Thomas",
+      "stay_date": "2026-05-12 00:00:00",
+      "review_date": "2026-05-15 00:00:00",
+      "nights": 3,
+      "guests": 4,
+      "rating_raw": 4,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Emily Davis",
+      "review_text": "Biju is fantastic. Wish there were more restaurants nearby but that's the location, not the villa.",
+      "rating_normalized": 4.0,
+      "tags": [
+        "general"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    },
+    {
+      "review_id": "RV046",
+      "platform": "Google",
+      "property_id": "P07",
+      "property_name": "Vineyard Villa",
+      "location": "Nashik, Maharashtra",
+      "caretaker_id": "CT06",
+      "caretaker_name": "Ganesh More",
+      "stay_date": "2026-05-16 00:00:00",
+      "review_date": "2026-05-17 00:00:00",
+      "nights": 1,
+      "guests": 2,
+      "rating_raw": 5,
+      "rating_scale": 5,
+      "host_responded": "Yes",
+      "guest_name": "Ananya Bose",
+      "review_text": "Beautiful sunsets over the vines. Perfect anniversary trip.",
+      "rating_normalized": 5.0,
+      "tags": [
+        "environment"
+      ],
+      "owners": [
+        "operations"
+      ],
+      "sentiment": "positive"
+    }
+  ],
+  "summary": {
+    "properties": {
+      "Serenity Villa": {
+        "reviews": 7,
+        "avg_rating": 4.09,
+        "sentiment": {
+          "positive": 5,
+          "negative": 2
+        },
+        "tag_counts": {
+          "pool": 5,
+          "service": 4,
+          "cleanliness": 3,
+          "heating": 1,
+          "general": 1,
+          "listing": 1
+        }
+      },
+      "Hilltop Haven": {
+        "reviews": 7,
+        "avg_rating": 2.68,
+        "sentiment": {
+          "negative": 4,
+          "mixed": 1,
+          "positive": 2
+        },
+        "tag_counts": {
+          "listing": 3,
+          "wifi": 3,
+          "heating": 3,
+          "service": 2,
+          "policy": 1,
+          "environment": 1
+        }
+      },
+      "Misty Estate": {
+        "reviews": 7,
+        "avg_rating": 3.36,
+        "sentiment": {
+          "negative": 4,
+          "positive": 3
+        },
+        "tag_counts": {
+          "heating": 4,
+          "service": 3,
+          "check-in": 2,
+          "environment": 1,
+          "listing": 1
+        }
+      },
+      "Coorg Canopy": {
+        "reviews": 5,
+        "avg_rating": 3.55,
+        "sentiment": {
+          "negative": 2,
+          "positive": 3
+        },
+        "tag_counts": {
+          "check-in": 2,
+          "heating": 2,
+          "service": 2,
+          "cleanliness": 1,
+          "listing": 1
+        }
+      },
+      "Backwater Bungalow": {
+        "reviews": 7,
+        "avg_rating": 4.32,
+        "sentiment": {
+          "positive": 6,
+          "mixed": 1
+        },
+        "tag_counts": {
+          "service": 4,
+          "environment": 3,
+          "heating": 2,
+          "cleanliness": 1,
+          "check-in": 1,
+          "general": 1
+        }
+      },
+      "Cliffside Retreat": {
+        "reviews": 6,
+        "avg_rating": 3.54,
+        "sentiment": {
+          "negative": 3,
+          "positive": 3
+        },
+        "tag_counts": {
+          "heating": 4,
+          "service": 3,
+          "environment": 3,
+          "general": 2
+        }
+      },
+      "Vineyard Villa": {
+        "reviews": 7,
+        "avg_rating": 2.79,
+        "sentiment": {
+          "negative": 4,
+          "positive": 3
+        },
+        "tag_counts": {
+          "cleanliness": 4,
+          "general": 2,
+          "check-in": 1,
+          "heating": 1,
+          "environment": 1
+        }
+      }
+    },
+    "caretakers": {
+      "Suresh Naik": {
+        "reviews": 7,
+        "avg_rating": 4.09,
+        "sentiment": {
+          "positive": 5,
+          "negative": 2
+        },
+        "tag_counts": {
+          "pool": 5,
+          "service": 4,
+          "cleanliness": 3,
+          "heating": 1,
+          "general": 1,
+          "listing": 1
+        }
+      },
+      "Mahesh Patil": {
+        "reviews": 7,
+        "avg_rating": 2.68,
+        "sentiment": {
+          "negative": 4,
+          "mixed": 1,
+          "positive": 2
+        },
+        "tag_counts": {
+          "listing": 3,
+          "wifi": 3,
+          "heating": 3,
+          "service": 2,
+          "policy": 1,
+          "environment": 1
+        }
+      },
+      "Lokesh Gowda": {
+        "reviews": 12,
+        "avg_rating": 3.44,
+        "sentiment": {
+          "negative": 6,
+          "positive": 6
+        },
+        "tag_counts": {
+          "heating": 6,
+          "service": 5,
+          "check-in": 4,
+          "listing": 2,
+          "environment": 1,
+          "cleanliness": 1
+        }
+      },
+      "Biju Thomas": {
+        "reviews": 7,
+        "avg_rating": 4.32,
+        "sentiment": {
+          "positive": 6,
+          "mixed": 1
+        },
+        "tag_counts": {
+          "service": 4,
+          "environment": 3,
+          "heating": 2,
+          "cleanliness": 1,
+          "check-in": 1,
+          "general": 1
+        }
+      },
+      "Deepak Sharma": {
+        "reviews": 6,
+        "avg_rating": 3.54,
+        "sentiment": {
+          "negative": 3,
+          "positive": 3
+        },
+        "tag_counts": {
+          "heating": 4,
+          "service": 3,
+          "environment": 3,
+          "general": 2
+        }
+      },
+      "Ganesh More": {
+        "reviews": 7,
+        "avg_rating": 2.79,
+        "sentiment": {
+          "negative": 4,
+          "positive": 3
+        },
+        "tag_counts": {
+          "cleanliness": 4,
+          "general": 2,
+          "check-in": 1,
+          "heating": 1,
+          "environment": 1
+        }
+      }
+    }
+  }
+}
